@@ -1,0 +1,78 @@
+DATA 3, 5.9, "Something, Idk a string hehe"
+READ anInt , aFloat% , aString$
+
+FOR A = 17 TO 10 STEP -2
+PRINT A
+PRINT "In for loop"
+NEXT A
+
+
+
+
+PRINT "WTH", aFloat%, anInt
+
+
+
+GOSUB hehe:
+
+lol: PRINT "back from GOSUB"
+
+
+PRINT "Back from gosub to INPUT"
+
+pop: PRINT "Something"
+
+INPUT "ENTER a Number", someNum%
+PRINT someNum%
+
+IF$ someNum% <= 9.7 THEN% pop:
+
+hehe: PRINT "Skipped INPUT and IF"
+
+PRINT "lllllllllllllllllllllll"
+
+
+
+c = 5
+b = 3
+a = b + 4
+d = ( ( b + c ) + 1 ) * ( 12 / b ) + ( 6 - 2 )
+
+e% = 6.78
+f% = 9.21
+
+
+g% = e% + f%
+
+PRINT "Test printing some values:"
+PRINT f% , a , b , c , d , e%, g% , 6.34 + 4.11  
+
+PRINT "//////////////////////////////////"
+
+RETURN
+
+word$ = "Albany"
+randomInt = RANDOM()
+leftTest$ = LEFT$("Washington",4)
+rightTest$ = RIGHT$("Washington",4)
+midTest$ = MID$( "Washington",3,10 )
+valFloat% = VAL%("12.345")
+valInt = VAL("1738")
+floatStr$ = NUM$(8.99)
+
+PRINT word$ , randomInt , leftTest$, rightTest$, midTest$, valFloat%, valInt , floatStr$ 
+
+DATA% 12.405, 56, "Something, Idk another string hehe"
+READ$ otherFloat% , otherInt , otherString$
+
+PRINT anInt , otherString$, word$ , aFloat%, midTest$, RANDOM(), RIGHT$("joke's On You",3)
+
+
+INPUT "Enter your first name followed by a comma and then your last name", firstName$, lastName$
+INPUT "Enter your birth month in letters (+comma) and then your birth year", month$, year
+INPUT "ENTER the day you were born in", day
+
+
+PRINT "This is your first Name:" , firstName$ 
+PRINT "This is your last Name:" , lastName$ 
+PRINT "This is your date of birth: " , month$, day , year
